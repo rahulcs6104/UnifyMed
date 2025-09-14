@@ -8,6 +8,7 @@ This application is run entirely on the front-end because we needed to build thi
 
 things you need for this application to work
 
-* A .env file with api key for Gemini AI. (All OCR and Language processing is done by the Gemini API.)
+* A .env file with api key for Gemini AI. (All OCR and Language processing is done by the Gemini API.) "GEMINI_API_KEY"
+* a json file with creditials for VISION API "GOOGLE_APPLICATION_CREDENTIALS_JSON"
 
   
