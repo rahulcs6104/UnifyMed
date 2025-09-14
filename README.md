@@ -7,8 +7,8 @@ upload multiple health-related forms/reports of a patient from any country, in a
 This application is run entirely on the front-end because we needed to build this in 48 hours.
 
 things you need for this application to work
-
-* A .env file with api key for Gemini AI. (All OCR and Language processing is done by the Gemini API.) "GEMINI_API_KEY"
+A .env file :
+* with api key for Gemini AI. (All OCR and Language processing is done by the Gemini API.) "GEMINI_API_KEY"
 * a json file with creditials for VISION API "GOOGLE_APPLICATION_CREDENTIALS_JSON"
 
   
