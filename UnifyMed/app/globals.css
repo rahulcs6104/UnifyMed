@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional fonts for medical interface */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+@layer base {
+  :root {
+    /* Professional medical interface color tokens */
+    --background: 210 40% 8%; /* Deep professional dark blue */
+    --foreground: 0 0% 100%; /* Pure white text */
+    --card: 210 40% 12%; /* Slightly lighter card background */
+    --card-foreground: 0 0% 100%; /* White text on cards */
+    --popover: 210 40% 15%; /* Popover background */
+    --popover-foreground: 0 0% 100%; /* Popover text */
+    --primary: 217 91% 60%; /* Professional blue accent */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 210 40% 15%; /* Secondary background */
+    --secondary-foreground: 0 0% 100%; /* Secondary text */
+    --muted: 210 40% 20%; /* Muted background */
+    --muted-foreground: 210 40% 70%; /* Muted text */
+    --accent: 180 100% 70%; /* Cyan accent color */
+    --accent-foreground: 0 0% 100%; /* Accent text */
+    --destructive: 0 84% 60%; /* Error color */
+    --destructive-foreground: 0 0% 100%; /* Error text */
+    --border: 210 40% 20%; /* Border color */
+    --input: 210 40% 15%; /* Input background */
+    --ring: 217 91% 60%; /* Focus ring */
+    --chart-1: 217 91% 60%; /* Chart colors */
+    --chart-2: 142 76% 36%;
+    --chart-3: 47 96% 53%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 262 83% 58%;
+    --radius: 0.75rem; /* Rounded corners */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  /* Professional typography classes */
+  .font-heading {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .font-body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+  }
+}
+
+/* Professional component styles */
+@layer components {
+  .btn-professional {
+    @apply transition-all duration-200 ease-in-out hover:shadow-lg active:scale-[0.98];
+  }
+
+  .card-professional {
+    @apply backdrop-blur-sm bg-card border border-border shadow-xl hover:shadow-2xl transition-all duration-300;
+  }
+
+  .glass-professional {
+    @apply backdrop-blur-md bg-card/80 border border-border/50;
+  }
+
+  .section-header {
+    @apply text-2xl font-heading font-bold text-foreground mb-6;
+  }
+}
+
+/* Removed problematic gradient-text class and animation */
